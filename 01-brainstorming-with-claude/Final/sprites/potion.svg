@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   height="820"
+   width="1250"
+   version="1.1"
+   id="Layer_1"
+   viewBox="0 0 800 524.8"
+   xml:space="preserve"
+   sodipodi:docname="potion.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs6"><filter
+     style="color-interpolation-filters:sRGB"
+     inkscape:label="Greyscale"
+     id="filter6"
+     x="0"
+     y="0"
+     width="1"
+     height="1"><feColorMatrix
+       values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 1 0 "
+       id="feColorMatrix6" /></filter><filter
+     style="color-interpolation-filters:sRGB"
+     inkscape:label="Greyscale"
+     id="filter7"
+     x="0"
+     y="0"
+     width="1"
+     height="1"><feColorMatrix
+       values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 1 0 "
+       id="feColorMatrix7" /></filter><filter
+     style="color-interpolation-filters:sRGB"
+     inkscape:label="Greyscale"
+     id="filter8"
+     x="0"
+     y="0"
+     width="1"
+     height="1"><feColorMatrix
+       values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 1 0 "
+       id="feColorMatrix8" /></filter></defs><sodipodi:namedview
+   id="namedview6"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="0.733125"
+   inkscape:cx="546.97357"
+   inkscape:cy="544.92754"
+   inkscape:window-width="2560"
+   inkscape:window-height="1369"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g8" />
+<path
+   style="fill:#e0e0e2"
+   d="M 383.845,302.637 C 373.675,233.825 327.124,177.046 263.681,153.263 V 41.071 h 16.327 c 9.22,0 16.696,-7.475 16.696,-16.696 0,-9.221 -7.476,-16.695 -16.696,-16.695 H 113.051 c -9.22,0 -16.696,7.475 -16.696,16.696 0,9.221 7.475,16.696 16.696,16.696 h 17.064 V 153.536 C 66.672,177.48 20.082,234.092 9.951,302.637 8.605,311.743 7.68,320.983 7.68,330.463 7.681,434.964 92.395,519.68 196.898,519.68 c 104.503,0 189.217,-84.716 189.217,-189.217 0,-9.48 -0.925,-18.721 -2.27,-27.826 z"
+   id="path1" />
+<path
+   style="fill:#c6c5ca"
+   d="M 383.845,302.637 C 373.675,233.825 327.124,177.046 263.681,153.263 V 41.071 h 16.327 c 9.22,0 16.696,-7.475 16.696,-16.696 0,-9.221 -7.476,-16.695 -16.696,-16.695 h -83.11 V 302.637 519.68 c 104.501,0 189.217,-84.716 189.217,-189.217 0,-9.48 -0.925,-18.721 -2.27,-27.826 z"
+   id="path2" />
+
+
+<g
+   id="g8"
+   transform="translate(340.036,-287.277)"><path
+     style="fill:#aeaeae;filter:url(#filter6);fill-opacity:1"
+     d="m 69.053,294.957 c -1.346,9.106 -2.271,18.346 -2.271,27.826 C 66.783,427.284 151.497,512 256,512 c 104.503,0 189.217,-84.716 189.217,-189.217 0,-9.48 -0.925,-18.72 -2.271,-27.826 z"
+     id="path3" /><path
+     style="fill:#747474;filter:url(#filter7);fill-opacity:1"
+     d="M 256,294.957 V 512 c 104.501,0 189.217,-84.716 189.217,-189.217 0,-9.48 -0.925,-18.72 -2.271,-27.826 z"
+     id="path4" /><g
+     id="g5"
+     style="filter:url(#filter8);fill:#e4e4e4;fill-opacity:1">
+	<circle
+   style="fill:#e4e4e4;fill-opacity:1"
+   cx="283.45901"
+   cy="395.13"
+   r="50.087002"
+   id="circle4" />
+	<circle
+   style="fill:#e4e4e4;fill-opacity:1"
+   cx="183.285"
+   cy="361.73901"
+   r="16.695999"
+   id="circle5" />
+</g></g>
+
+</svg>
