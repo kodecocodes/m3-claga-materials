@@ -1,0 +1,293 @@
+[gd_resource type="Theme" format=3 uid="uid://cqkrntu00nlnk"]
+
+[ext_resource type="FontFile" uid="uid://qmlpocehbna2" path="res://fonts/Baloo2-Regular.ttf" id="1_baloo"]
+[ext_resource type="FontFile" uid="uid://bk7xyv4mnv8sy" path="res://fonts/Nunito-Regular.ttf" id="2_nunito"]
+[ext_resource type="FontFile" uid="uid://b156vkquk7d6k" path="res://fonts/NotoColorEmoji-Regular.ttf" id="3_emoji"]
+
+[sub_resource type="StyleBoxFlat" id="sb_avatar"]
+bg_color = Color(0.141, 0.102, 0.071, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.969, 0.769, 0.388, 0.4)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="FontVariation" id="font_baloo_800"]
+base_font = ExtResource("1_baloo")
+variation_embolden = 0.4
+
+[sub_resource type="StyleBoxFlat" id="sb_brew_normal"]
+content_margin_left = 48.0
+content_margin_top = 16.0
+content_margin_right = 48.0
+content_margin_bottom = 16.0
+bg_color = Color(0.941, 0.659, 0.22, 1)
+corner_radius_top_left = 49
+corner_radius_top_right = 49
+corner_radius_bottom_right = 49
+corner_radius_bottom_left = 49
+shadow_color = Color(0.725, 0.475, 0.122, 1)
+shadow_offset = Vector2(0, 8)
+
+[sub_resource type="StyleBoxFlat" id="sb_brew_pressed"]
+content_margin_left = 48.0
+content_margin_top = 16.0
+content_margin_right = 48.0
+content_margin_bottom = 16.0
+bg_color = Color(0.882, 0.6, 0.18, 1)
+corner_radius_top_left = 49
+corner_radius_top_right = 49
+corner_radius_bottom_right = 49
+corner_radius_bottom_left = 49
+
+[sub_resource type="FontVariation" id="font_nunito_700"]
+base_font = ExtResource("2_nunito")
+variation_embolden = 0.3
+
+[sub_resource type="StyleBoxFlat" id="sb_empty_pot"]
+content_margin_left = 22.0
+content_margin_top = 10.0
+content_margin_right = 22.0
+content_margin_bottom = 10.0
+bg_color = Color(0.969, 0.769, 0.388, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.969, 0.769, 0.388, 0.2)
+corner_radius_top_left = 999
+corner_radius_top_right = 999
+corner_radius_bottom_right = 999
+corner_radius_bottom_left = 999
+
+[sub_resource type="StyleBoxFlat" id="sb_nav_normal"]
+bg_color = Color(0.941, 0.722, 0.298, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0.725, 0.475, 0.122, 1)
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="sb_nav_pressed"]
+bg_color = Color(0.882, 0.62, 0.22, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="FontVariation" id="font_baloo_700"]
+base_font = ExtResource("1_baloo")
+variation_embolden = 0.2
+
+[sub_resource type="StyleBoxFlat" id="sb_pantry_item"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.196, 0.118, 0.094, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.969, 0.769, 0.388, 0.18)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="sb_pantry_item_selected"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.243, 0.173, 0.114, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.969, 0.769, 0.388, 0.5)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0.969, 0.769, 0.388, 0.4)
+shadow_size = 22
+
+[sub_resource type="StyleBoxFlat" id="sb_recipe_panel"]
+content_margin_left = 32.0
+content_margin_top = 30.0
+content_margin_right = 32.0
+content_margin_bottom = 30.0
+bg_color = Color(0.176, 0.125, 0.086, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.969, 0.769, 0.388, 0.22)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="sb_recipe_card"]
+content_margin_left = 26.0
+content_margin_top = 24.0
+content_margin_right = 26.0
+content_margin_bottom = 24.0
+bg_color = Color(0.961, 0.91, 0.804, 1)
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+
+[sub_resource type="FontVariation" id="font_nunito_italic"]
+base_font = ExtResource("2_nunito")
+variation_transform = Transform2D(1, 0.22, 0, 1, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="sb_ingredient_slot"]
+bg_color = Color(1, 0.969, 0.902, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.627, 0.431, 0.157, 0.25)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="sb_speech_bubble"]
+content_margin_left = 26.0
+content_margin_top = 24.0
+content_margin_right = 26.0
+content_margin_bottom = 24.0
+bg_color = Color(0.984, 0.941, 0.847, 1)
+corner_radius_top_left = 26
+corner_radius_top_right = 26
+corner_radius_bottom_right = 26
+corner_radius_bottom_left = 26
+
+[sub_resource type="StyleBoxFlat" id="sb_well_empty"]
+bg_color = Color(0.969, 0.769, 0.388, 0.05)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.969, 0.769, 0.388, 0.3)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+corner_detail = 20
+anti_aliasing_size = 0.4
+
+[sub_resource type="StyleBoxFlat" id="sb_well_filled"]
+bg_color = Color(0.969, 0.769, 0.388, 0.1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.969, 0.769, 0.388, 0.4)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+corner_detail = 20
+anti_aliasing_size = 0.4
+
+[resource]
+default_font = ExtResource("2_nunito")
+default_font_size = 20
+Avatar/base_type = &"Panel"
+Avatar/styles/panel = SubResource("sb_avatar")
+BrewButton/base_type = &"Button"
+BrewButton/colors/font_color = Color(0.227, 0.122, 0.039, 1)
+BrewButton/colors/font_hover_color = Color(0.227, 0.122, 0.039, 1)
+BrewButton/colors/font_pressed_color = Color(0.227, 0.122, 0.039, 1)
+BrewButton/font_sizes/font_size = 32
+BrewButton/fonts/font = SubResource("font_baloo_800")
+BrewButton/styles/focus = SubResource("sb_brew_normal")
+BrewButton/styles/hover = SubResource("sb_brew_normal")
+BrewButton/styles/normal = SubResource("sb_brew_normal")
+BrewButton/styles/pressed = SubResource("sb_brew_pressed")
+CustomerName/base_type = &"Label"
+CustomerName/colors/font_color = Color(0.965, 0.89, 0.753, 1)
+CustomerName/font_sizes/font_size = 24
+CustomerName/fonts/font = SubResource("font_baloo_800")
+EmojiLabel/base_type = &"Label"
+EmojiLabel/fonts/font = ExtResource("3_emoji")
+EmptyPotButton/base_type = &"Button"
+EmptyPotButton/colors/font_color = Color(0.541, 0.416, 0.267, 1)
+EmptyPotButton/colors/font_hover_color = Color(0.541, 0.416, 0.267, 1)
+EmptyPotButton/colors/font_pressed_color = Color(0.541, 0.416, 0.267, 1)
+EmptyPotButton/font_sizes/font_size = 18
+EmptyPotButton/fonts/font = SubResource("font_nunito_700")
+EmptyPotButton/styles/focus = SubResource("sb_empty_pot")
+EmptyPotButton/styles/hover = SubResource("sb_empty_pot")
+EmptyPotButton/styles/normal = SubResource("sb_empty_pot")
+EmptyPotButton/styles/pressed = SubResource("sb_empty_pot")
+NavButton/base_type = &"Button"
+NavButton/colors/font_color = Color(0.227, 0.122, 0.039, 1)
+NavButton/colors/font_hover_color = Color(0.227, 0.122, 0.039, 1)
+NavButton/colors/font_pressed_color = Color(0.227, 0.122, 0.039, 1)
+NavButton/font_sizes/font_size = 18
+NavButton/fonts/font = SubResource("font_baloo_800")
+NavButton/styles/focus = SubResource("sb_nav_normal")
+NavButton/styles/hover = SubResource("sb_nav_normal")
+NavButton/styles/normal = SubResource("sb_nav_normal")
+NavButton/styles/pressed = SubResource("sb_nav_pressed")
+PanelHeading/base_type = &"Label"
+PanelHeading/colors/font_color = Color(0.965, 0.89, 0.753, 1)
+PanelHeading/font_sizes/font_size = 26
+PanelHeading/fonts/font = SubResource("font_baloo_700")
+PantryHeading/base_type = &"Label"
+PantryHeading/colors/font_color = Color(0.965, 0.89, 0.753, 1)
+PantryHeading/font_sizes/font_size = 24
+PantryHeading/fonts/font = SubResource("font_baloo_700")
+PantryItem/base_type = &"PanelContainer"
+PantryItem/styles/panel = SubResource("sb_pantry_item")
+PantryItemSelected/base_type = &"PanelContainer"
+PantryItemSelected/styles/panel = SubResource("sb_pantry_item_selected")
+PantryLabel/base_type = &"Label"
+PantryLabel/colors/font_color = Color(0.792, 0.643, 0.416, 1)
+PantryLabel/font_sizes/font_size = 20
+PantryLabel/fonts/font = SubResource("font_nunito_700")
+PantryLabelActive/base_type = &"Label"
+PantryLabelActive/colors/font_color = Color(0.941, 0.753, 0.439, 1)
+PantryLabelActive/font_sizes/font_size = 20
+PantryLabelActive/fonts/font = SubResource("font_nunito_700")
+RecipeBookPanel/base_type = &"PanelContainer"
+RecipeBookPanel/styles/panel = SubResource("sb_recipe_panel")
+RecipeCard/base_type = &"PanelContainer"
+RecipeCard/styles/panel = SubResource("sb_recipe_card")
+RecipeDesc/base_type = &"RichTextLabel"
+RecipeDesc/colors/default_color = Color(0.478, 0.353, 0.204, 1)
+RecipeDesc/font_sizes/normal_font_size = 20
+RecipeDesc/fonts/normal_font = SubResource("font_nunito_italic")
+RecipeSlot/base_type = &"Panel"
+RecipeSlot/styles/panel = SubResource("sb_ingredient_slot")
+RecipeTitle/base_type = &"Label"
+RecipeTitle/colors/font_color = Color(0.353, 0.239, 0.122, 1)
+RecipeTitle/font_sizes/font_size = 28
+RecipeTitle/fonts/font = SubResource("font_baloo_800")
+ScreenTitle/base_type = &"Label"
+ScreenTitle/colors/font_color = Color(0.965, 0.89, 0.753, 1)
+ScreenTitle/font_sizes/font_size = 50
+ScreenTitle/fonts/font = SubResource("font_baloo_800")
+SpeechBubble/base_type = &"PanelContainer"
+SpeechBubble/styles/panel = SubResource("sb_speech_bubble")
+SpeechText/base_type = &"RichTextLabel"
+SpeechText/colors/default_color = Color(0.353, 0.239, 0.122, 1)
+SpeechText/font_sizes/bold_font_size = 21
+SpeechText/font_sizes/normal_font_size = 21
+SpeechText/fonts/bold_font = SubResource("font_nunito_700")
+SpeechText/fonts/normal_font = ExtResource("2_nunito")
+WellEmpty/base_type = &"Panel"
+WellEmpty/styles/panel = SubResource("sb_well_empty")
+WellFilled/base_type = &"Panel"
+WellFilled/styles/panel = SubResource("sb_well_filled")

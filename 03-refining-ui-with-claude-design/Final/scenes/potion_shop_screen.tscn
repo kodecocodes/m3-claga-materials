@@ -1,0 +1,556 @@
+[gd_scene format=3 uid="uid://de7egoppsc1xl"]
+
+[ext_resource type="Theme" uid="uid://cqkrntu00nlnk" path="res://themes/potion_shop.tres" id="1_theme"]
+[ext_resource type="PackedScene" uid="uid://i73vxlmv7rbq" path="res://scenes/cauldron.tscn" id="2_6r646"]
+[ext_resource type="Script" uid="uid://bid6h0o1u8lji" path="res://scripts/potion_shop_screen.gd" id="3_logic"]
+[ext_resource type="Resource" uid="uid://jev7umjmbibh" path="res://data/recipe_database.tres" id="4_recipedb"]
+[ext_resource type="Resource" uid="uid://d7ool1eyxyk" path="res://data/customer_database.tres" id="5_customerdb"]
+
+[sub_resource type="StyleBoxFlat" id="sb_tail"]
+bg_color = Color(0.984, 0.941, 0.847, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="PotionShopScreen" type="Control" unique_id=64283575]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_theme")
+script = ExtResource("3_logic")
+recipe_db = ExtResource("4_recipedb")
+customer_db = ExtResource("5_customerdb")
+
+[node name="Background" type="ColorRect" parent="." unique_id=597002387]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.082, 0.055, 0.031, 1)
+
+[node name="ScreenTitle" type="Label" parent="." unique_id=2033125421]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 46.0
+offset_bottom = 110.0
+grow_horizontal = 2
+theme_type_variation = &"ScreenTitle"
+text = "Witch's Apprentice"
+horizontal_alignment = 1
+
+[node name="RecipeBookPanel" type="PanelContainer" parent="." unique_id=1042217647]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 0
+offset_left = 70.0
+offset_top = 150.0
+theme_type_variation = &"RecipeBookPanel"
+
+[node name="VBox" type="VBoxContainer" parent="RecipeBookPanel" unique_id=696930616]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="PanelHeaderRow" type="HBoxContainer" parent="RecipeBookPanel/VBox" unique_id=114499705]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="IconLabel" type="Label" parent="RecipeBookPanel/VBox/PanelHeaderRow" unique_id=1408014693]
+layout_mode = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 34
+text = "📖"
+vertical_alignment = 1
+
+[node name="TitleLabel" type="Label" parent="RecipeBookPanel/VBox/PanelHeaderRow" unique_id=153591642]
+layout_mode = 2
+theme_type_variation = &"PanelHeading"
+text = "Recipe"
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="RecipeBookPanel/VBox/PanelHeaderRow" unique_id=2121606507]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NavButtons" type="HBoxContainer" parent="RecipeBookPanel/VBox/PanelHeaderRow" unique_id=1479721768]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 8
+
+[node name="BtnPrev" type="Button" parent="RecipeBookPanel/VBox/PanelHeaderRow/NavButtons" unique_id=1033158687]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_type_variation = &"NavButton"
+text = "‹"
+
+[node name="BtnNext" type="Button" parent="RecipeBookPanel/VBox/PanelHeaderRow/NavButtons" unique_id=1593339450]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_type_variation = &"NavButton"
+text = "›"
+
+[node name="RecipeCard" type="PanelContainer" parent="RecipeBookPanel/VBox" unique_id=2114756831]
+layout_mode = 2
+theme_type_variation = &"RecipeCard"
+
+[node name="VBox" type="VBoxContainer" parent="RecipeBookPanel/VBox/RecipeCard" unique_id=636959833]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="RecipeName" type="Label" parent="RecipeBookPanel/VBox/RecipeCard/VBox" unique_id=521695753]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"RecipeTitle"
+text = "Silkweaver's Kiss"
+horizontal_alignment = 1
+
+[node name="SpacerTop" type="Control" parent="RecipeBookPanel/VBox/RecipeCard/VBox" unique_id=1575650694]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+
+[node name="IngredientSlots" type="HBoxContainer" parent="RecipeBookPanel/VBox/RecipeCard/VBox" unique_id=933343064]
+layout_mode = 2
+theme_override_constants/separation = 14
+alignment = 1
+
+[node name="Slot1" type="Panel" parent="RecipeBookPanel/VBox/RecipeCard/VBox/IngredientSlots" unique_id=760763251]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(74, 74)
+layout_mode = 2
+theme_type_variation = &"RecipeSlot"
+
+[node name="Emoji" type="Label" parent="RecipeBookPanel/VBox/RecipeCard/VBox/IngredientSlots/Slot1" unique_id=1646213259]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 40
+text = "🕷️"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot2" type="Panel" parent="RecipeBookPanel/VBox/RecipeCard/VBox/IngredientSlots" unique_id=1382770821]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(74, 74)
+layout_mode = 2
+theme_type_variation = &"RecipeSlot"
+
+[node name="Emoji" type="Label" parent="RecipeBookPanel/VBox/RecipeCard/VBox/IngredientSlots/Slot2" unique_id=1447376483]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 40
+text = "🍯"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Slot3" type="Panel" parent="RecipeBookPanel/VBox/RecipeCard/VBox/IngredientSlots" unique_id=638103707]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(74, 74)
+layout_mode = 2
+theme_type_variation = &"RecipeSlot"
+
+[node name="Emoji" type="Label" parent="RecipeBookPanel/VBox/RecipeCard/VBox/IngredientSlots/Slot3" unique_id=815632275]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 40
+text = "🌕"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpacerBottom" type="Control" parent="RecipeBookPanel/VBox/RecipeCard/VBox" unique_id=443395612]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="RecipeDesc" type="RichTextLabel" parent="RecipeBookPanel/VBox/RecipeCard/VBox" unique_id=2848852]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"RecipeDesc"
+bbcode_enabled = true
+text = "[center]A thread of moonlight binds spider silk and honeyed sap into something stranger — the drinker's touch leaves unbreakable webs.[/center]"
+fit_content = true
+
+[node name="PantrySection" type="VBoxContainer" parent="." unique_id=390474067]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 0
+offset_left = 70.0
+offset_top = 620.0
+theme_override_constants/separation = 0
+
+[node name="PantryHeader" type="HBoxContainer" parent="PantrySection" unique_id=463732578]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="IconLabel" type="Label" parent="PantrySection/PantryHeader" unique_id=1285693318]
+layout_mode = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 28
+text = "🧺"
+vertical_alignment = 1
+
+[node name="TitleLabel" type="Label" parent="PantrySection/PantryHeader" unique_id=1119599912]
+layout_mode = 2
+theme_type_variation = &"PantryHeading"
+text = "Pantry"
+vertical_alignment = 1
+
+[node name="HeaderGap" type="Control" parent="PantrySection" unique_id=1468139087]
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="PantryGrid" type="GridContainer" parent="PantrySection" unique_id=167809229]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="ItemMoon" type="PanelContainer" parent="PantrySection/PantryGrid" unique_id=887199732]
+custom_minimum_size = Vector2(176, 176)
+layout_mode = 2
+theme_type_variation = &"PantryItem"
+
+[node name="VBox" type="VBoxContainer" parent="PantrySection/PantryGrid/ItemMoon" unique_id=1231414819]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Emoji" type="Label" parent="PantrySection/PantryGrid/ItemMoon/VBox" unique_id=1224108863]
+layout_mode = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 42
+text = "🌕"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="PantrySection/PantryGrid/ItemMoon/VBox" unique_id=1806068733]
+layout_mode = 2
+theme_type_variation = &"PantryLabel"
+text = "Moon"
+horizontal_alignment = 1
+
+[node name="ItemMist" type="PanelContainer" parent="PantrySection/PantryGrid" unique_id=1337322946]
+custom_minimum_size = Vector2(176, 176)
+layout_mode = 2
+theme_type_variation = &"PantryItem"
+
+[node name="VBox" type="VBoxContainer" parent="PantrySection/PantryGrid/ItemMist" unique_id=1245736162]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Emoji" type="Label" parent="PantrySection/PantryGrid/ItemMist/VBox" unique_id=1972057978]
+layout_mode = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 42
+text = "🌫️"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="PantrySection/PantryGrid/ItemMist/VBox" unique_id=1536181366]
+layout_mode = 2
+theme_type_variation = &"PantryLabel"
+text = "Mist"
+horizontal_alignment = 1
+
+[node name="ItemEmberbloom" type="PanelContainer" parent="PantrySection/PantryGrid" unique_id=1057247004]
+custom_minimum_size = Vector2(176, 176)
+layout_mode = 2
+theme_type_variation = &"PantryItem"
+
+[node name="VBox" type="VBoxContainer" parent="PantrySection/PantryGrid/ItemEmberbloom" unique_id=253937625]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Emoji" type="Label" parent="PantrySection/PantryGrid/ItemEmberbloom/VBox" unique_id=1507104787]
+layout_mode = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 42
+text = "🔥"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="PantrySection/PantryGrid/ItemEmberbloom/VBox" unique_id=580431665]
+layout_mode = 2
+theme_type_variation = &"PantryLabel"
+text = "Emberbloom"
+horizontal_alignment = 1
+
+[node name="ItemUnicorn" type="PanelContainer" parent="PantrySection/PantryGrid" unique_id=160253694]
+custom_minimum_size = Vector2(176, 176)
+layout_mode = 2
+theme_type_variation = &"PantryItem"
+
+[node name="VBox" type="VBoxContainer" parent="PantrySection/PantryGrid/ItemUnicorn" unique_id=1122870080]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Emoji" type="Label" parent="PantrySection/PantryGrid/ItemUnicorn/VBox" unique_id=1766861073]
+layout_mode = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 42
+text = "🦄"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="PantrySection/PantryGrid/ItemUnicorn/VBox" unique_id=716539207]
+layout_mode = 2
+theme_type_variation = &"PantryLabel"
+text = "Unicorn"
+horizontal_alignment = 1
+
+[node name="ItemSpider" type="PanelContainer" parent="PantrySection/PantryGrid" unique_id=1603808373]
+custom_minimum_size = Vector2(176, 176)
+layout_mode = 2
+theme_type_variation = &"PantryItemSelected"
+
+[node name="VBox" type="VBoxContainer" parent="PantrySection/PantryGrid/ItemSpider" unique_id=710340000]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Emoji" type="Label" parent="PantrySection/PantryGrid/ItemSpider/VBox" unique_id=1433999141]
+layout_mode = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 42
+text = "🕷️"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="PantrySection/PantryGrid/ItemSpider/VBox" unique_id=1627112161]
+layout_mode = 2
+theme_type_variation = &"PantryLabelActive"
+text = "Spider ✓"
+horizontal_alignment = 1
+
+[node name="ItemHoney" type="PanelContainer" parent="PantrySection/PantryGrid" unique_id=103746341]
+custom_minimum_size = Vector2(176, 176)
+layout_mode = 2
+theme_type_variation = &"PantryItemSelected"
+
+[node name="VBox" type="VBoxContainer" parent="PantrySection/PantryGrid/ItemHoney" unique_id=117660417]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 1
+
+[node name="Emoji" type="Label" parent="PantrySection/PantryGrid/ItemHoney/VBox" unique_id=203344120]
+layout_mode = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 42
+text = "🍯"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="PantrySection/PantryGrid/ItemHoney/VBox" unique_id=396605001]
+layout_mode = 2
+theme_type_variation = &"PantryLabelActive"
+text = "Honey ✓"
+horizontal_alignment = 1
+
+[node name="CauldronColumn" type="VBoxContainer" parent="." unique_id=1951738168]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 0
+offset_left = 760.0
+offset_top = 300.0
+theme_override_constants/separation = 0
+
+[node name="ActiveIngredientRow" type="HBoxContainer" parent="CauldronColumn" unique_id=1037528847]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="Well1" type="Panel" parent="CauldronColumn/ActiveIngredientRow" unique_id=203188787]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_type_variation = &"WellFilled"
+
+[node name="Emoji" type="Label" parent="CauldronColumn/ActiveIngredientRow/Well1" unique_id=816325224]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 38
+text = "🕷️"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Well2" type="Panel" parent="CauldronColumn/ActiveIngredientRow" unique_id=126055842]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_type_variation = &"WellFilled"
+
+[node name="Emoji" type="Label" parent="CauldronColumn/ActiveIngredientRow/Well2" unique_id=1217699379]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 38
+text = "🍯"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Well3" type="Panel" parent="CauldronColumn/ActiveIngredientRow" unique_id=24104344]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_type_variation = &"WellEmpty"
+
+[node name="Plus" type="Label" parent="CauldronColumn/ActiveIngredientRow/Well3" unique_id=864676999]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"PantryLabel"
+theme_override_font_sizes/font_size = 30
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RowGap" type="Control" parent="CauldronColumn" unique_id=829904531]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+
+[node name="CauldronDisplay" type="Control" parent="CauldronColumn" unique_id=1273188383]
+custom_minimum_size = Vector2(400, 330)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="BrewGap" type="Control" parent="CauldronColumn" unique_id=30493710]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="BrewButton" type="Button" parent="CauldronColumn" unique_id=1259517170]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(286, 98)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"BrewButton"
+text = "Brew it!"
+
+[node name="EmptyGap" type="Control" parent="CauldronColumn" unique_id=1621584548]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="EmptyPotButton" type="Button" parent="CauldronColumn" unique_id=2132370390]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_type_variation = &"EmptyPotButton"
+text = "Empty the pot"
+
+[node name="Cauldron" parent="CauldronColumn" unique_id=1579878946 instance=ExtResource("2_6r646")]
+unique_name_in_owner = true
+position = Vector2(205, 304)
+
+[node name="CustomerColumn" type="VBoxContainer" parent="." unique_id=143564035]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(520, 0)
+layout_mode = 0
+offset_left = 1330.0
+offset_top = 170.0
+theme_override_constants/separation = 0
+
+[node name="SpeechBubbleGroup" type="Control" parent="CustomerColumn" unique_id=687558882]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BubbleTail" type="Panel" parent="CustomerColumn/SpeechBubbleGroup" unique_id=771817254]
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -89.0
+offset_top = -20.0
+offset_right = -55.0
+offset_bottom = 14.0
+grow_horizontal = 0
+grow_vertical = 0
+rotation = 0.785398
+pivot_offset = Vector2(17, 17)
+theme_override_styles/panel = SubResource("sb_tail")
+
+[node name="BubblePanel" type="PanelContainer" parent="CustomerColumn/SpeechBubbleGroup" unique_id=2046434991]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"SpeechBubble"
+
+[node name="SpeechText" type="RichTextLabel" parent="CustomerColumn/SpeechBubbleGroup/BubblePanel" unique_id=1073288882]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"SpeechText"
+bbcode_enabled = true
+text = "\"My joints are aching something awful, dearie... could you whip me up a [b]Moonveil Tincture[/b]?\""
+fit_content = true
+
+[node name="SpeechGap" type="Control" parent="CustomerColumn" unique_id=410977556]
+custom_minimum_size = Vector2(0, 34)
+layout_mode = 2
+
+[node name="CustomerInfo" type="HBoxContainer" parent="CustomerColumn" unique_id=1522725247]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 2
+
+[node name="NameColumn" type="VBoxContainer" parent="CustomerColumn/CustomerInfo" unique_id=299112292]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="CustomerName" type="Label" parent="CustomerColumn/CustomerInfo/NameColumn" unique_id=877726169]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"CustomerName"
+text = "Old Maeve"
+horizontal_alignment = 2
+
+[node name="AvatarPanel" type="Panel" parent="CustomerColumn/CustomerInfo" unique_id=202367498]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_type_variation = &"Avatar"
+
+[node name="AvatarEmoji" type="Label" parent="CustomerColumn/CustomerInfo/AvatarPanel" unique_id=1324528259]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"EmojiLabel"
+theme_override_font_sizes/font_size = 96
+text = "👩‍🦳"
+horizontal_alignment = 1
+vertical_alignment = 1

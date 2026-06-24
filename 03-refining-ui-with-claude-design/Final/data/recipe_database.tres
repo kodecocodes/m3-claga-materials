@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="RecipeDatabase" format=3 uid="uid://jev7umjmbibh"]
+
+[ext_resource type="Script" uid="uid://ckmx5qjyvgskr" path="res://scripts/recipe_database.gd" id="1_db"]
+[ext_resource type="Script" uid="uid://qgf62ruwsumm" path="res://scripts/potion_recipe.gd" id="2_recipe"]
+[ext_resource type="Script" uid="uid://bdjtc4lsg5wwx" path="res://scripts/ingredient_data.gd" id="3_ingredient"]
+
+[sub_resource type="Resource" id="recipe_moonveil"]
+script = ExtResource("2_recipe")
+id = &"moonveil_tincture"
+potion_name = "Moonveil Tincture"
+color = Color(0.788, 0.851, 0.91, 1)
+description = "Renders the drinker translucent as morning fog, muffling their footsteps and masking their scent entirely. The effect lingers until the first light of sunrise."
+required_ingredients = Array[String](["🌕", "🌫️"])
+
+[sub_resource type="Resource" id="recipe_pyre"]
+script = ExtResource("2_recipe")
+id = &"pyre_of_the_pure"
+potion_name = "Pyre of the Pure"
+color = Color(1, 0.667, 0.2, 1)
+description = "Purges poison, curse, and corruption from the body in a single burning surge. The pain is brief and brilliant; the relief, absolute and lasting."
+required_ingredients = Array[String](["🔥", "🦄"])
+
+[sub_resource type="Resource" id="recipe_silkweaver"]
+script = ExtResource("2_recipe")
+id = &"silkweavers_kiss"
+potion_name = "Silkweaver's Kiss"
+color = Color(0.831, 0.643, 0.353, 1)
+description = "A thread of moonlight binds spider silk and honeyed sap into something stranger: the drinker's touch leaves unbreakable webs, and their movements become eerily silent and fluid."
+required_ingredients = Array[String](["🕷️", "🍯", "🌕"])
+
+[sub_resource type="Resource" id="ingredient_moon"]
+script = ExtResource("3_ingredient")
+emoji = "🌕"
+ingredient_name = "Full Moon Tear"
+
+[sub_resource type="Resource" id="ingredient_mist"]
+script = ExtResource("3_ingredient")
+emoji = "🌫️"
+ingredient_name = "Mist"
+
+[sub_resource type="Resource" id="ingredient_fire"]
+script = ExtResource("3_ingredient")
+emoji = "🔥"
+ingredient_name = "Fire"
+
+[sub_resource type="Resource" id="ingredient_unicorn"]
+script = ExtResource("3_ingredient")
+emoji = "🦄"
+ingredient_name = "Unicorn Horn"
+
+[sub_resource type="Resource" id="ingredient_spider"]
+script = ExtResource("3_ingredient")
+emoji = "🕷️"
+ingredient_name = "Spider"
+
+[sub_resource type="Resource" id="ingredient_honey"]
+script = ExtResource("3_ingredient")
+emoji = "🍯"
+ingredient_name = "Honey"
+
+[resource]
+script = ExtResource("1_db")
+recipes = Array[ExtResource("2_recipe")]([SubResource("recipe_moonveil"), SubResource("recipe_pyre"), SubResource("recipe_silkweaver")])
+shelf_ingredients = Array[ExtResource("3_ingredient")]([SubResource("ingredient_moon"), SubResource("ingredient_mist"), SubResource("ingredient_fire"), SubResource("ingredient_unicorn"), SubResource("ingredient_spider"), SubResource("ingredient_honey")])
