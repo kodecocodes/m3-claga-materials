@@ -1,0 +1,266 @@
+[gd_resource type="Resource" script_class="CustomerDatabase" format=3 uid="uid://d7ool1eyxyk"]
+
+[ext_resource type="Script" uid="uid://8xce2o7iq0m7" path="res://scripts/customer_database.gd" id="1_db"]
+[ext_resource type="Script" uid="uid://bs6fkvoq428tp" path="res://scripts/customer_data.gd" id="2_customer"]
+
+[sub_resource type="Resource" id="c_person"]
+script = ExtResource("2_customer")
+emoji = "🧑"
+customer_name = "Person"
+
+[sub_resource type="Resource" id="c_woman"]
+script = ExtResource("2_customer")
+emoji = "👩"
+customer_name = "Woman"
+
+[sub_resource type="Resource" id="c_man"]
+script = ExtResource("2_customer")
+emoji = "👨"
+customer_name = "Man"
+
+[sub_resource type="Resource" id="c_red_hair"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🦰"
+customer_name = "Red Hair"
+
+[sub_resource type="Resource" id="c_curly_hair"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🦱"
+customer_name = "Curly Hair"
+
+[sub_resource type="Resource" id="c_white_hair"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🦳"
+customer_name = "White Hair"
+
+[sub_resource type="Resource" id="c_bald"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🦲"
+customer_name = "Bald"
+
+[sub_resource type="Resource" id="c_blond"]
+script = ExtResource("2_customer")
+emoji = "👱"
+customer_name = "Blond"
+
+[sub_resource type="Resource" id="c_blond_f"]
+script = ExtResource("2_customer")
+emoji = "👱‍♀️"
+customer_name = "Blond (F)"
+
+[sub_resource type="Resource" id="c_red_hair_f"]
+script = ExtResource("2_customer")
+emoji = "👩‍🦰"
+customer_name = "Red Hair (F)"
+
+[sub_resource type="Resource" id="c_curly_hair_f"]
+script = ExtResource("2_customer")
+emoji = "👩‍🦱"
+customer_name = "Curly Hair (F)"
+
+[sub_resource type="Resource" id="c_white_hair_f"]
+script = ExtResource("2_customer")
+emoji = "👩‍🦳"
+customer_name = "White Hair (F)"
+
+[sub_resource type="Resource" id="c_bald_f"]
+script = ExtResource("2_customer")
+emoji = "👩‍🦲"
+customer_name = "Bald (F)"
+
+[sub_resource type="Resource" id="c_older"]
+script = ExtResource("2_customer")
+emoji = "🧓"
+customer_name = "Older Person"
+
+[sub_resource type="Resource" id="c_old_man"]
+script = ExtResource("2_customer")
+emoji = "👴"
+customer_name = "Old Man"
+
+[sub_resource type="Resource" id="c_old_woman"]
+script = ExtResource("2_customer")
+emoji = "👵"
+customer_name = "Old Woman"
+
+[sub_resource type="Resource" id="c_child"]
+script = ExtResource("2_customer")
+emoji = "🧒"
+customer_name = "Child"
+
+[sub_resource type="Resource" id="c_boy"]
+script = ExtResource("2_customer")
+emoji = "👦"
+customer_name = "Boy"
+
+[sub_resource type="Resource" id="c_girl"]
+script = ExtResource("2_customer")
+emoji = "👧"
+customer_name = "Girl"
+
+[sub_resource type="Resource" id="c_baby"]
+script = ExtResource("2_customer")
+emoji = "👶"
+customer_name = "Baby"
+
+[sub_resource type="Resource" id="c_with_bottle"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🍼"
+customer_name = "With Bottle"
+
+[sub_resource type="Resource" id="c_graduate"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🎓"
+customer_name = "Graduate"
+
+[sub_resource type="Resource" id="c_graduate_f"]
+script = ExtResource("2_customer")
+emoji = "👩‍🎓"
+customer_name = "Graduate (F)"
+
+[sub_resource type="Resource" id="c_graduate_m"]
+script = ExtResource("2_customer")
+emoji = "👨‍🎓"
+customer_name = "Graduate (M)"
+
+[sub_resource type="Resource" id="c_guard"]
+script = ExtResource("2_customer")
+emoji = "💂"
+customer_name = "Guard"
+
+[sub_resource type="Resource" id="c_guard_f"]
+script = ExtResource("2_customer")
+emoji = "💂‍♀️"
+customer_name = "Guard (F)"
+
+[sub_resource type="Resource" id="c_officer"]
+script = ExtResource("2_customer")
+emoji = "👮"
+customer_name = "Officer"
+
+[sub_resource type="Resource" id="c_officer_f"]
+script = ExtResource("2_customer")
+emoji = "👮‍♀️"
+customer_name = "Officer (F)"
+
+[sub_resource type="Resource" id="c_chef"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🍳"
+customer_name = "Chef"
+
+[sub_resource type="Resource" id="c_chef_f"]
+script = ExtResource("2_customer")
+emoji = "👩‍🍳"
+customer_name = "Chef (F)"
+
+[sub_resource type="Resource" id="c_wizard"]
+script = ExtResource("2_customer")
+emoji = "🧙"
+customer_name = "Wizard"
+
+[sub_resource type="Resource" id="c_witch"]
+script = ExtResource("2_customer")
+emoji = "🧙‍♀️"
+customer_name = "Witch"
+
+[sub_resource type="Resource" id="c_cowboy"]
+script = ExtResource("2_customer")
+emoji = "🤠"
+customer_name = "Cowboy"
+
+[sub_resource type="Resource" id="c_disguise"]
+script = ExtResource("2_customer")
+emoji = "🥸"
+customer_name = "Disguise"
+
+[sub_resource type="Resource" id="c_rockstar"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🎤"
+customer_name = "Rockstar"
+
+[sub_resource type="Resource" id="c_elf"]
+script = ExtResource("2_customer")
+emoji = "🧝"
+customer_name = "Elf"
+
+[sub_resource type="Resource" id="c_elf_f"]
+script = ExtResource("2_customer")
+emoji = "🧝‍♀️"
+customer_name = "Elf (F)"
+
+[sub_resource type="Resource" id="c_mermaid"]
+script = ExtResource("2_customer")
+emoji = "🧜"
+customer_name = "Mermaid"
+
+[sub_resource type="Resource" id="c_mermaid_f"]
+script = ExtResource("2_customer")
+emoji = "🧜‍♀️"
+customer_name = "Mermaid (F)"
+
+[sub_resource type="Resource" id="c_fairy"]
+script = ExtResource("2_customer")
+emoji = "🧚"
+customer_name = "Fairy"
+
+[sub_resource type="Resource" id="c_fairy_f"]
+script = ExtResource("2_customer")
+emoji = "🧚‍♀️"
+customer_name = "Fairy (F)"
+
+[sub_resource type="Resource" id="c_vampire"]
+script = ExtResource("2_customer")
+emoji = "🧛"
+customer_name = "Vampire"
+
+[sub_resource type="Resource" id="c_vampire_f"]
+script = ExtResource("2_customer")
+emoji = "🧛‍♀️"
+customer_name = "Vampire (F)"
+
+[sub_resource type="Resource" id="c_zombie"]
+script = ExtResource("2_customer")
+emoji = "🧟"
+customer_name = "Zombie"
+
+[sub_resource type="Resource" id="c_zombie_f"]
+script = ExtResource("2_customer")
+emoji = "🧟‍♀️"
+customer_name = "Zombie (F)"
+
+[sub_resource type="Resource" id="c_genie"]
+script = ExtResource("2_customer")
+emoji = "🧞"
+customer_name = "Genie"
+
+[sub_resource type="Resource" id="c_genie_f"]
+script = ExtResource("2_customer")
+emoji = "🧞‍♀️"
+customer_name = "Genie (F)"
+
+[sub_resource type="Resource" id="c_astronaut"]
+script = ExtResource("2_customer")
+emoji = "🧑‍🚀"
+customer_name = "Astronaut"
+
+[sub_resource type="Resource" id="c_ninja"]
+script = ExtResource("2_customer")
+emoji = "🥷"
+customer_name = "Ninja"
+
+[sub_resource type="Resource" id="c_prince"]
+script = ExtResource("2_customer")
+emoji = "🤴"
+customer_name = "Prince"
+
+[sub_resource type="Resource" id="c_princess"]
+script = ExtResource("2_customer")
+emoji = "👸"
+customer_name = "Princess"
+
+[resource]
+script = ExtResource("1_db")
+customers = Array[ExtResource("2_customer")]([SubResource("c_person"), SubResource("c_woman"), SubResource("c_man"), SubResource("c_red_hair"), SubResource("c_curly_hair"), SubResource("c_white_hair"), SubResource("c_bald"), SubResource("c_blond"), SubResource("c_blond_f"), SubResource("c_red_hair_f"), SubResource("c_curly_hair_f"), SubResource("c_white_hair_f"), SubResource("c_bald_f"), SubResource("c_older"), SubResource("c_old_man"), SubResource("c_old_woman"), SubResource("c_child"), SubResource("c_boy"), SubResource("c_girl"), SubResource("c_baby"), SubResource("c_with_bottle"), SubResource("c_graduate"), SubResource("c_graduate_f"), SubResource("c_graduate_m"), SubResource("c_guard"), SubResource("c_guard_f"), SubResource("c_officer"), SubResource("c_officer_f"), SubResource("c_chef"), SubResource("c_chef_f"), SubResource("c_wizard"), SubResource("c_witch"), SubResource("c_cowboy"), SubResource("c_disguise"), SubResource("c_rockstar"), SubResource("c_elf"), SubResource("c_elf_f"), SubResource("c_mermaid"), SubResource("c_mermaid_f"), SubResource("c_fairy"), SubResource("c_fairy_f"), SubResource("c_vampire"), SubResource("c_vampire_f"), SubResource("c_zombie"), SubResource("c_zombie_f"), SubResource("c_genie"), SubResource("c_genie_f"), SubResource("c_astronaut"), SubResource("c_ninja"), SubResource("c_prince"), SubResource("c_princess")])
+request_quips = Array[String](["I need something for my aching joints... could you whip up a {potion_name}?", "Got anything that'll make my mother-in-law like me? I heard a {potion_name} might do the trick.", "My cat's been talking to me. Got any {potion_name} that could help with that?", "Brew me a {potion_name}, I've got a dragon to negotiate with later.", "I'll take a {potion_name}. Make it strong, I've got a long night ahead."])
+positive_quips = Array[String](["Oh, this is exactly what the doctor, er, witch, ordered!", "Whoa, I feel ten years younger already! Worth every coin.", "You've got real talent, kid. The old witch better watch her job.", "Perfect! My ears stopped ringing the moment I drank it!", "This is incredible, I'm telling everyone in town about this place!"])
+negative_quips = Array[String](["Uh... is it supposed to smell like wet socks?", "I asked for courage, not a sudden urge to take a nap.", "My eyebrows weren't *this* color when I walked in here.", "This tastes like regret. Mostly mine, for choosing this shop.", "I think you mixed up the labels again — I'm starting to glow."])

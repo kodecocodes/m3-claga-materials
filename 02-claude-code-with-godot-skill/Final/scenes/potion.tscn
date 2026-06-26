@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtc1bljfgwp62"]
+
+[ext_resource type="Texture2D" uid="uid://btu64k84ty217" path="res://sprites/potion.svg" id="1_ym5ma"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_potion"]
+size = Vector2(600, 800)
+
+[node name="Potion" type="Sprite2D" unique_id=1483718548]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_ym5ma")
+region_enabled = true
+region_rect = Rect2(12, 12, 592, 800)
+metadata/_edit_group_ = true
+
+[node name="PotionLiquidSprite" type="Sprite2D" parent="." unique_id=1721408698]
+modulate = Color(0.7815672, 0.53543, 0.9493479, 1)
+position = Vector2(0, 232)
+texture = ExtResource("1_ym5ma")
+region_enabled = true
+region_rect = Rect2(635, 12, 592, 340)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_potion")

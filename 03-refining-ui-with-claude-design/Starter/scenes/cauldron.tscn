@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://i73vxlmv7rbq"]
+
+[ext_resource type="Texture2D" uid="uid://ds4kg4r2nmdjd" path="res://sprites/cauldron.svg" id="1_bi80w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cauldron"]
+size = Vector2(320, 300)
+
+[node name="Cauldron" type="Node2D" unique_id=1579878946]
+metadata/_edit_group_ = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2096704487]
+position = Vector2(-10.323444, 1.2151318)
+scale = Vector2(0.47774482, 0.47774488)
+texture = ExtResource("1_bi80w")
+region_enabled = true
+region_rect = Rect2(26, 166, 748, 674)
+
+[node name="Liquid" type="Sprite2D" parent="." unique_id=407824701]
+self_modulate = Color(5.7756904e-07, 0.7441967, 0.96189946, 1)
+position = Vector2(-8.323322, -136.78487)
+scale = Vector2(0.47774482, 0.47774488)
+texture = ExtResource("1_bi80w")
+region_enabled = true
+region_rect = Rect2(236, 45, 484, 52)
+
+[node name="Front" type="Sprite2D" parent="." unique_id=1893656992]
+z_index = 10
+position = Vector2(-11.323425, -12.78479)
+scale = Vector2(0.47774482, 0.47774488)
+texture = ExtResource("1_bi80w")
+region_enabled = true
+region_rect = Rect2(831, 209, 618, 525)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_cauldron")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://5buvyi7xl76w"]
+
+[ext_resource type="FontFile" uid="uid://b156vkquk7d6k" path="res://fonts/NotoColorEmoji-Regular.ttf" id="1_rcex7"]
+[ext_resource type="Script" path="res://scripts/ingredient.gd" id="2_ingr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ingr"]
+size = Vector2(138, 148)
+
+[node name="Ingredient" type="Node2D" unique_id=988801178]
+z_index = 5
+script = ExtResource("2_ingr")
+metadata/_edit_group_ = true
+
+[node name="EmojiLabel" type="Label" parent="." unique_id=1503891562]
+mouse_filter = 2
+offset_left = -69.0
+offset_top = -74.92857
+offset_right = 69.0
+offset_bottom = 72.92857
+theme_override_fonts/font = ExtResource("1_rcex7")
+theme_override_font_sizes/font_size = 70
+text = "🌿"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_ingr")
